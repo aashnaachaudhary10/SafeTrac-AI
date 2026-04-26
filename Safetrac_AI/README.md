@@ -2,7 +2,6 @@
 ### AI-Powered Women's Safety Navigation Platform
 > Built for **Elite Her Hackathon 2026** | Team: **Chai or Code** ☕💻
 
-![SafeTrac Banner](Safetrac_AI/safetrac-ai.jpg)
 
 ## 🚀 Features
 
