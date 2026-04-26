@@ -1,0 +1,59 @@
+:root {
+  --bg: #08061A;
+  --bg2: #100D2E;
+  --card: #13103A;
+  --card2: #1A1650;
+  --purple: #6D28D9;
+  --violet: #7C3AED;
+  --magenta: #D946EF;
+  --pink: #EC4899;
+  --white: #F5F0FF;
+  --gray: #A78BFA;
+  --gray2: #6B7280;
+  --green: #10B981;
+  --yellow: #F59E0B;
+  --red: #EF4444;
+  --border: rgba(124, 58, 237, 0.25);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 { font-family: 'Syne', sans-serif; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg2); }
+::-webkit-scrollbar-thumb { background: var(--violet); border-radius: 3px; }
+
+.leaflet-container { background: #0d0b2a !important; }
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(217, 70, 239, 0.4); }
+  50% { box-shadow: 0 0 40px rgba(217, 70, 239, 0.8), 0 0 80px rgba(217, 70, 239, 0.3); }
+}
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
